@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Coffy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="grid-box">
+          <div class="box left">
+            <div class="content">
+              <div class="text-container">
+                <div class="text-content">
+                  <h4>
+                    <img src="img/Vector.png" alt="logos" /> Miljøvennlige
+                    kaffekapsler rett i postkassen
+                  </h4>
+                  <h4>
+                    <img src="img/Group.png" alt="logos" /> Din kaffe, nøyaktig
+                    slik du vil ha den
+                  </h4>
+                  <h4>
+                    <img src="img/clarity_cancel-line.png" alt="logos" /> En
+                    fleksibel abonnementsløsning, pause, endre eller avbryt når
+                    du vil
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box right">
+            <div class="start_container">
+              <h3>Kom i gang</h3>
+              <p>
+                La oss finne planen som er riktig for deg. En fleksibel
+                abonnementsløsning, ta en pause, endre eller avbryt etter eget
+                ønske.
+              </p>
+              <a href="#!" class="starter">Bygg ditt abonnement</a>
+            </div>
+            <div class="ecoffy__container" style="display: none">
+              <div class="ecoffy__content">
+                <!-- Section One Start -->
+                <div class="ecoffy__content__section one" data-number="1">
+                  <h3>Hvor mange kapsler per måned ønsker du?</h3>
+                  <div class="grid-box three">
+                    <div data-quantity="3" data-price="30" class="box">
+                      <div class="content">
+                        <h2>30</h2>
+                        <span class="discount-price">139 kr/mnd</span>
+                        <span class="regular-price">69 kr/mnd</span>
+                      </div>
+                    </div>
+                    <div data-quantity="6" data-price="60" class="box popular">
+                      <div class="content">
+                        <h2>60</h2>
+                        <span class="discount-price">249 kr/mnd</span>
+                        <span class="regular-price">125 kr/mnd</span>
+                      </div>
+                    </div>
+                    <div data-quantity="9" data-price="90" class="box">
+                      <div class="content">
+                        <h2>90</h2>
+                        <span class="discount-price">359 kr/mnd</span>
+                        <span class="regular-price">179 kr/mnd</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Section One Ends -->
+                <!-- Section two Start -->
+                <div id="data-number-2" class="ecoffy__content__section two" data-number="2">
+                  <h3>Velg dine smaker</h3>
+                  <p>Dine kaffe, nøyaktig slik du vil ha den.</p>
+                  <div class="standard-pack">
+                    <div class="text">
+                      <h3>Standard Pakke</h3>
+                      <p>En jevn fordelt blanding av våre smaker</p>
+                    </div>
+                    <div class="img">
+                      <img src="img/cups.png" alt="cups" />
+                    </div>
+                  </div>
+                  <div class="grid-box three">
+                    <div class="box">
+                      <div class="content">
+                        <img src="img/green_pod.png" alt="green_pod" />
+                        <h2>Lungo</h2>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="content">
+                        <img src="img/maroon_pod.png" alt="maroon_pod" />
+                        <h2>Dark Roast</h2>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="content">
+                        <img src="img/blue_pod.png" alt="blue_pod" />
+                        <h2>Espresso</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Section two Ends -->
+                <!-- Section three Start -->
+                <div class="ecoffy__content__section two three">
+                  <span class="limitMsg"></span>
+                  <div class="standard-pack">
+                    <div class="text">
+                      <h3>Mix & Match</h3>
+                      <p>Sett sammen ditt eget abonnement</p>
+                    </div>
+                    <div id="toggle-1">
+                      <div class="card">
+                        <div class="toggle">
+                          <input type="checkbox" id="check-2" />
+                          <label for="check-2"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="standard-pack inside" style="display: none">
+                      <div class="text qty">
+                        <h3>Lungo</h3>
+                        <div class="qty_container">
+                          <a href="#!" class="btn-decr">
+                            <i class="fa-solid fa-minus"></i>
+                          </a>
+                          <input
+                            type="number"
+                            min="0"
+                            max="10"
+                            name="qty"
+                            id="qty-1"
+                            value="1"
+                          />
+                          <a href="#!" class="btn-incr">
+                            <i class="fa-solid fa-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="text qty">
+                        <h3>Dark Roast</h3>
+                        <div class="qty_container">
+                          <a href="#!" class="btn-decr">
+                            <i class="fa-solid fa-minus"></i>
+                          </a>
+                          <input
+                            type="number"
+                            min="0"
+                            max="10"
+                            name="qty"
+                            id="qty-2"
+                            value="1"
+                          />
+                          <a href="#!" class="btn-incr">
+                            <i class="fa-solid fa-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="text qty">
+                        <h3>Espresso</h3>
+                        <div class="qty_container">
+                          <a href="#!" class="btn-decr">
+                            <i class="fa-solid fa-minus"></i>
+                          </a>
+                          <input
+                            type="number"
+                            min="0"
+                            max="10"
+                            name="qty"
+                            id="qty-3"
+                            value="1"
+                          />
+                          <a href="#!" class="btn-incr">
+                            <i class="fa-solid fa-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Section three Ends -->
+                <!-- Section Four Start -->
+                <div class="ecoffy__content__section two four">
+                  <div class="standard-pack">
+                    <p>Om våre smaker</p>
+                    <!-- grid-box-1 -->
+                    <div class="grid-box">
+                      <div class="box left">
+                        <div class="img">
+                          <img src="img/green_pod.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="box right">
+                        <h4>Lungo</h4>
+                        <p>
+                          En lys til mellombrent kaffe med innslag av kakao og
+                          karamell i smaken, medium syrlighet og en lang
+                          ettersmak. Styrke 6.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- grid-box-2 -->
+                    <div class="grid-box">
+                      <div class="box left">
+                        <div class="img">
+                          <img src="img/maroon_pod.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="box right">
+                        <h4>Dark Roast</h4>
+                        <p>
+                          En relativt mørk kaffe med en fruktig smak med innslag
+                          av honning, liten grad av syrlighet. Styrke 7.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- grid-box-3 -->
+                    <div class="grid-box">
+                      <div class="box left">
+                        <div class="img">
+                          <img src="img/blue_pod.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="box right">
+                        <h4>Espresso</h4>
+                        <p>
+                          En kraftig mørkbrent espresso med et innslag av
+                          sjokolade i smaken med en krydret undertone, lav
+                          syrlighet og bitterhet. Styrke 10.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Section Four Ends -->
+                <!-- Section Five Start -->
+                <div class="ecoffy__content__section four five hide">
+                  <h3>Din plan er klar</h3>
+                  <div class="tabs">
+                    <a href="#!"><span>Introduksjons Tilbud</span></a>
+                    <a href="#!"><span>Fremtidige Ordre</span></a>
+                  </div>
+                  <div class="tabs__content">
+                    <div class="content hide">
+                      <h3>Ditt introduksjonstilbud</h3>
+                      <ul>
+                        <li>Halv pris på første ordre</li>
+                        <li>Gratis frakt</li>
+                        <li>
+                          En fleksibel abonnementsløsning, pause, endre eller
+                          avbryt når du vil
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content hide">
+                      <h3>Din plan</h3>
+                      <ul>
+                        <li>Halv pris på første ordre</li>
+                        <li>Gratis frakt</li>
+                        <li>
+                          En fleksibel abonnementsløsning, pause, endre eller
+                          avbryt når du vil
+                        </li>
+                        <li>Neste forsendelse 07/07/2023</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Section Five Ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container">
+          <div class="content next-step">
+            <h4><span>0</span> av 2 deler valgt</h4>
+            <a href="#!">Fortsett</a>
+          </div>
+        </div>
+        <input type="hidden" name="qtyTotalCount" id="qtyTotalCount" value="" />
+      </div>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/live_script.js"></script>
+  </body>
+</html>
